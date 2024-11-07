@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-    <title>You Inspires</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>You Inspire</title>
     <link rel="stylesheet" href="input.css">
 
 </head>
@@ -21,8 +23,6 @@
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
-
-
                             <a href="/about.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About us</a>
                             <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
                             <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contacts</a>
@@ -35,13 +35,9 @@
             </div>
 
         </div>
-
-
-        <!-- Mobile menu, show/hide based on menu state. -->
+<!--        this is for mobile version-->
         <div class="sm:hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pb-3 pt-2">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-
                 <a href="/about.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About us</a>
                 <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
                 <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
@@ -52,17 +48,58 @@
 
 
     <div class="bg-fixed grid py-5 grid-rows-2 grid-cols-2 gap-4" style="background-image:url('/assets/81303.jpg')">
-        <div id="one" class="col-start-2 flex flex-col justify-end"><span class="text-purple-700 font-bold text-7xl pl-24 pb-10 main-title">You Inspires</span></div>
-        <div id="two" class="row-start-1 row-span-2 text-white pl-40"><img src="assets/img_5.png" class=" rounded-3xl"></div>
+        <div id="one" class="col-start-2 flex flex-col justify-end "><span class="text-purple-700 font-bold text-7xl pl-24 pb-10 main-title">You Inspire</span></div>
+        <div id="two" class="row-start-1 row-span-2 text-white pl-40"><img src="assets/img_5.png" class=" rounded-3xl sm:pr-10"></div>
         <div id="thee" class="col-start-2 text-gray-700 pl-24 pr-10 text-2xl" style="font-family: 'lobster', sans-serif">You Inspire is a space dedicated to igniting creativity, motivation, and growth in everyone who visits. Our blog is here to share stories, ideas, and resources that spark inspiration, empower you to pursue your passions, and help you navigate life's journey. From personal development and mental wellness to practical tips on productivity and creativity, You Inspire aims to be a source of positivity and encouragement.</div>
     </div>
     <hr class="border-black"/>
-    <div id="prev-post" class="py-20 px-12 grid grid-rows-2 grid-cols-4 gap-4 h-1/2">
-        <div class="flex-col col-start-1 col-span-2 row-span-2"><img src="assets/img_1.png" class="w-full h-full object-cover"/></div>
-        <div class="flex-col col-start-3 col-end-4 row-span-2"><img src="assets/img_3.png" class="w-full h-full object-cover"/></div>
-        <div class="flex-col row start-1"><img src="assets/img_2.png" class="w-full h-full object-cover"/></div>
-        <div class="h-full bg-[url('img_4.jpg')] bg-cover bg-center"></div>
+    <div><h1 class="text-4xl font-serif px-10 pt-10 font-semibold text-grey-600">Recent Posts</h1></div>
+    <div id="prev-post" class="py-12 px-12 grid grid-rows-2 grid-cols-4 gap-4 h-[600px]">
+        <div class="h-full bg-[url(/assets/img_1.png)] bg-cover bg-center flex flex-col-reverse col-start-1 col-span-2 row-span-2 border transition-transform duration-300 hover:scale-105">
+            <div class="bg-black bg-opacity-30 flex flex-col h-1/4 hover:bg-opacity-90 ">
+                <span class="text-white px-4 font-sans font-bold text-4xl">5 Key Fashion Trends You Need to Know for This Season</span>
+                <span class="px-4 text-white font-sans">Lucia</span>
+            </div>
+        </div>
+        <div class="h-full bg-[url(/assets/img_3.png)] bg-cover bg-center flex flex-col-reverse col-start-3 col-end-4 row-span-2 border transition-transform duration-300 hover:scale-105">
+            <div class="bg-black bg-opacity-30 flex flex-col h-1/4 hover:bg-opacity-90 ">
+                <span class="text-white px-4 font-sans font-bold text-2xl">Fashion Hacks: 10 Tricks to Instantly Upgrade Your Outfit</span>
+                <span class="px-4 text-white font-sans">Sarah</span>
+            </div>
+        </div>
+        <div class="h-full bg-[url(/assets/img_2.png)] bg-cover bg-center flex flex-col-reverse border transition-transform duration-300 hover:scale-105">
+            <div class="bg-black bg-opacity-30 flex flex-col h-1/4 hover:bg-opacity-90 ">
+                <span class="text-white px-4 font-sans font-bold">The Best Fall Fashion Trends of 2024</span>
+                <span class="px-4 text-white font-sans">Robert</span>
+            </div>
+        </div>
+        <div class="h-full bg-[url(/assets/img_4.png)] bg-cover bg-center flex flex-col-reverse border transition-transform duration-300 hover:scale-105">
+            <div class="bg-black bg-opacity-30 flex flex-col h-1/4 hover:bg-opacity-90 ">
+                <span class="text-white px-4 font-sans font-bold ">10 Ways To Grow Fashion</span>
+                <span class="px-4 text-white font-sans">Julia</span>
+            </div>
+        </div>
     </div>
+    <div class="grid grid-cols2 py-12">
+        <div class="col-start-1">
+            <img src="./assets/img.png" class="px-12 rounded-2xl" alt="article"/>
+        </div>
+        <div class="col-start-2 flex flex-col items-center w-fit justify-center">
+            <span class="text-4xl font-sans font-bold text-center pb-10">"Accessory Spotlight: How to Elevate Your Outfits with Statement Pieces"</span>
+            <span class="text-center pr-4 font-serif text-lg">Thrift shopping is not only budget-friendly but also sustainable, making it a win-win for fashion lovers. But it takes a bit of skill to navigate thrift stores and find those hidden gems. From vintage treasures to high-quality basics, this guide will show you how to make the most of your thrift shopping experience.</span>
+        </div>
+    </div>
+<footer class=" bg-gray-800 pt-20 pb-10 text-blue-300">
+    <div class="flex flex-col items-center" ><span class="align-middle main-title text-2xl">You Inspire</span>
+    <span class="py-4">Copyright@SKILLOP 2024</span>
+    <hr class="border border-blue-300 w-full bg-blue-300"/>
+    <div class="flex space-x-4 justify-center py-4">
+        <i href="https://facebook.com" class="fa fa-facebook hover:text-white" aria-label="Facebook" target="_blank"></i>
+        <a href="https://twitter.com" class="fa fa-twitter hover:text-white" aria-label="Twitter" target="_blank"></a>
+        <a href="https://instagram.com" class="fa fa-instagram hover:text-white" aria-label="Instagram" target="_blank"></a>
+        <a href="https://linkedin.com" class="fa fa-linkedin hover:text-white"></a>
+    </div></div>
+</footer>
 
 
 </body>
